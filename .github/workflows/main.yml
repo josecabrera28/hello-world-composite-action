@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: josecabrera28/hello-world-composite-action@main
+        uses: ./.github/actions/hello-world-composite-action
         with:
           who-to-greet: 'Jose'
       - run: echo random-number "$RANDOM_NUMBER"
